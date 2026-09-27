@@ -1,0 +1,245 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+body {
+    background: #f4f6f8;
+}
+
+header {
+    background: #2d2d2d;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.2rem;
+  letter-spacing: 1px;
+  font-weight: 700;
+}
+
+.container {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    max-width: 1300px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.catalog {
+    flex: 2;
+    min-width: 300px;
+}
+
+#searchInput {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    margin-bottom: 12px;
+    font-size: 1rem;
+}
+
+.categoryFilters {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 16px;
+    flex-wrap: wrap;
+}
+
+.categoryBtn {
+    padding: 8px 14px;
+    border: 1px solid #ddd;
+    background: white;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.categoryBtn.active {
+    background: #2d2d2d;
+    color: white;
+}
+
+.productGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 14px;
+}
+
+.productCard {
+    background: white;
+    border-radius: 10px;
+    padding: 14px;
+    text-align: center;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+
+}
+
+.productImage {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 8px;
+}
+
+.productCard h3 {
+    font-size: 1rem;
+    margin: 4px 0;
+}
+
+.productCard .price {
+    color: #e84393;
+    font-weight: bolder;
+    margin-bottom: 8px;
+}
+
+.productCard button {
+    background: #e84393;
+    color: white;
+    border: none;
+    padding: 6px 10px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.cart {
+    flex: 1;
+    min-width: 250px;
+    background: white;
+    border-radius: 10px;
+    padding: 16px;
+    align-self: self-start;
+}
+
+#cartList {
+    list-style: none;
+    margin-bottom: 12px;
+}
+
+.cartItem {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 0;
+    font-size: 0.9rem;
+}
+
+.cartItem .qtyControls button {
+    width: 24px;
+    height: 24px;
+    border: 1px solid #ccc;
+    background: #f4f6f8;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.cartItem .removeBtn {
+    background: #e74c3c;
+    color: white;
+    border: none;
+    padding: 4px 8px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#cartTotal {
+    font-weight: bold;
+    text-align: right;
+}
+
+.emptyMessage {
+    color: #999;
+    font-style: italic;
+    text-align: center;
+}
+
+.sortControls {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.sortControls button {
+  padding: 8px 14px;
+  border: 1px solid #ddd;
+  background: white;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.sortControls button:hover {
+  background: #f4f6f8;
+}
+
+.cartBadge {
+  background: #e74c3c;
+  color: white;
+  font-size: 0.8rem;
+  padding: 2px 8px;
+  border-radius: 12px;
+  margin-left: 6px;
+}
+
+.hero {
+  background-image: url("images/hero.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 220px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.heroOverlay {
+  background: rgba(37, 1, 1, 0.55);
+  color: white;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.heroOverlay h2 {
+  font-size: 1.6rem;
+  margin-bottom: 8px;
+}
+
+.heroOverlay p {
+  font-size: 1rem;
+}
+
+.siteFooter {
+  background-image: url("images/footer.jpg");
+  background-size: cover;
+  background-position: center;
+  margin-top: 20px;
+}
+
+.footerOverlay {
+  background: rgba(37, 1, 1, 0.55);
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.footerOverlay h3 {
+  font-size: 1.4rem;
+  margin-bottom: 6px;
+}
+
+.footerSmall {
+  font-size: 0.8rem;
+  opacity: 0.8;
+  margin-top: 10px;
+}

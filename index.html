@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>AnBy Boutique</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>AnBy Boutique</h1>
+    </header>
+
+    <section class="hero">
+    <div class="heroOverlay">
+        <h2>Élégance et pudeur, à chaque tenue</h2>
+        <p>Découvre notre collection de hijabs, abayas et accessoires</p>
+    </div>
+    </section>
+
+    <main class="container">
+        <section class="catalog">
+            <input type="text" id="searchInput" placeholder="Rechercher un article...">
+
+            <div class="categoryFilters">
+                <button class="categoryBtn active" data-category="all">Tous</button>
+                <button class="categoryBtn" data-category="hijab">Hijabs</button>
+                <button class="categoryBtn" data-category="abaya">Abayas</button>
+                <button class="categoryBtn" data-category="accessoire">Accessoires</button>
+            </div>
+
+            <div class="sortControls">
+                <button id="sortAsc">Prix croissant ↑</button>
+                <button id="sortDesc">Prix décroissant ↓</button>
+            </div>
+
+            <div id="productList" class="productGrid"></div>
+        </section>
+
+        <aside class="cart">
+            <h2> Mon panier <span id="cartCount" class="cartBadge">0</span></h2>
+            <ul id="cartList"></ul>
+            <p id="cartTotal">Total : 0 FCFA</p>
+
+        </aside>
+    </main>
+
+    <footer class="siteFooter">
+    <div class="footerOverlay">
+        <h3>AnBy Boutique</h3>
+        <p>Mode voilée, livrée avec élégance</p>
+        <p class="footerSmall">© 2026 AnBy Boutique — Tous droits réservés</p>
+    </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
