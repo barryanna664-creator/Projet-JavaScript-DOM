@@ -58,6 +58,8 @@ const categoryButtons = document.querySelectorAll(".categoryBtn");
 const productListElement = document.getElementById("productList");
 const cartListElement = document.getElementById("cartList");
 const cartTotalElement = document.getElementById("cartTotal");
+const sortAscButton = document.getElementById("sortAsc");
+const sortDescButton = document.getElementById("sortDesc");
 
 // -----------------------------
 // 3. FONCTIONS DE L'APPLICATION
@@ -292,6 +294,14 @@ function sortProductsByPrice(order) {
 searchInput.addEventListener("input", function () {
   currentSearchText = searchInput.value;
   renderProducts();
+});
+
+sortAscButton.addEventListener("click", function () {
+  sortProductsByPrice("asc");
+});
+
+sortDescButton.addEventListener("click", function () {
+  sortProductsByPrice("desc");
 });
 
 // Événement : clic sur un bouton de catégorie
